@@ -1,1 +1,24 @@
-我的第一个github文件
+--我的第一个github文件
+
+--配置Git关联账号
+git config --global user.name "Tyllllln"
+git config --global user.email "cmt021102@gmail.com"
+
+--云端
+--新建仓库+复制仓库地址HTTPS
+
+--本地
+--新建文件夹，文件夹名与仓库名一致
+--在文件夹放入 需要上传的文件
+--在文件夹空白处右键 →Git Bash Here
+
+# 1. 初始化本地仓库
+git init
+# 2. 关联云端仓库
+git remote add origin 你的仓库HTTPS链接
+# 3. 添加文件到Git追踪
+git add 文件名（如test.txt）  # 或 git add . 上传所有文件
+# 4. 提交文件（备注必填）
+git commit -m "备注信息（如add test.txt）"
+# 5. 推送文件到云端（首次推送）
+git push -u origin master:main
